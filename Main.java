@@ -1,9 +1,16 @@
+import java.util.Scanner;
+
 class Main {
-  public static void main(String[] args) {
+    public static void main(String[] args) {
+    
+    Scanner myObj = new Scanner(System.in);
 
-    int mass = 1969, sum = 0;
+    System.out.println("Enter module mass:");
 
-      sum = mass/3-2;
+    int mass = myObj.nextInt();
+    int sum = 0;
+    
+    sum = mass/3-2;
   
     System.out.println(sum);
 
