@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     try{
-      File x = new File(//);
+      File x = new File(//text);
       Scanner sc = new Scanner(x);
       while(sc.hasNextInt()){
         int mass = sc.nextInt();
