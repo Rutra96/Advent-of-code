@@ -5,23 +5,22 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     try{ 
-      File x = new File("text.txt");
+      File x = new File("text2.txt");
       Scanner sc = new Scanner(x);
       while(sc.hasNextInt()){
         int mass = sc.nextInt();
-        System.out.println(mass);
+      
+        int sum = 0;
+        sum = mass/3-2;
+
+      
+        
+  
+        System.out.println(sum);
       }
       sc.close();
     }catch(FileNotFoundException e){
-      System.out.println("Error");
+      System.out.println("Error File Not Found");
     }
- 
-   // int sum = 0;
-    
-   // sum = mass/3-2;
-  
-   // System.out.println(sum);
-
-
   }
 }
