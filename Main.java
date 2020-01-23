@@ -10,13 +10,13 @@ class Main {
       while(sc.hasNextInt()){
         int mass = sc.nextInt();
       
-        int sum = 0;
-        sum = mass/3-2;
+        int fuelReq = 0;
+        fuelReq = mass/3-2;
 
       
         
   
-        System.out.println(sum);
+        System.out.println(fuelReq);
       }
       sc.close();
     }catch(FileNotFoundException e){
