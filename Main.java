@@ -4,23 +4,32 @@ import java.util.Scanner;
 
 class Main {
   public static void main(String[] args) {
+    
+    int fuelReq = 0;
+    int sum = 0;
+      
+    
     try{ 
-      File x = new File("text.txt");
+      File x = new File("text2.txt");
       Scanner sc = new Scanner(x);
       while(sc.hasNextInt()){
         int mass = sc.nextInt();
-      
-        int fuelReq = 0;
+ 
         fuelReq = mass/3-2;
 
-      
+        //System.out.println(fuelReq);
         
-  
-        System.out.println(fuelReq);
+        sum += fuelReq; 
+
+        System.out.println(sum);
+
       }
-      sc.close();
+
+    sc.close(); 
     }catch(FileNotFoundException e){
       System.out.println("Error File Not Found");
     }
+
   }
+
 }
