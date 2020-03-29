@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 
-class Main {
+class Main2 {
   public static void main(String[] args) {
     
    int [] tablica = {1,1,1,4,99,5,6,0,99};
